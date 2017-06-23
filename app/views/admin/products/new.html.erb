@@ -1,0 +1,23 @@
+<h2> 新增服务 </h2>
+
+<%= simple_form_for [:admin, @product] do |f| %>
+
+  <div class="group">
+    <%= f.input :title, label: '服务项目'%>
+  </div>
+
+  <div class="group">
+    <%= f.input :description, label: '服务描述' %>
+  </div>
+
+  <div class="group">
+    <%= f.input :quantity, label: '服务数量' %>
+  </div>
+
+  <div class="group">
+    <%= f.input :price, label: '服务价格' %>
+  </div>
+
+  <%= f.submit "确认发布", data: { disable_with: "发布中..." } %>
+
+<% end %>
