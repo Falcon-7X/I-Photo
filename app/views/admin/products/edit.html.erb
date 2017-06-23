@@ -1,4 +1,4 @@
-<h2> 新增服务 </h2>
+<h2> 修改服务 </h2>
 
 <%= simple_form_for [:admin, @product] do |f| %>
 
@@ -18,6 +18,6 @@
     <%= f.input :price, label: '服务价格' %>
   </div>
 
-  <%= f.submit "确认发布", data: { disable_with: "发布中..." } %>
+  <%= f.submit "确认修改", data: { disable_with: "发布中..." } %>
 
 <% end %>
