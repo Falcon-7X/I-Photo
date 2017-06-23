@@ -31,9 +31,17 @@ class Admin::ProductsController < ApplicationController
 
     if @product.update(product_params)
       redirect_to admin_products_path
+      flash[:notice] = "修改成功"
     else
       render :edit
     end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+
+    @product.destroy
+    redirect_to admin_products_path, alert: '成功删除'
   end
 
   private
