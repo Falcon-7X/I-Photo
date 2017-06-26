@@ -8,7 +8,7 @@
 
 
 u = User.new
-u.email = "lilei@sina.com"           # 可以改成自己的 email
+u.email = "hanmeimei@sina.com"           # 可以改成自己的 email
 
 u.password = "111111"                # 最少要六码
 
